@@ -5,10 +5,16 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<Layout
-	title="qr_politcal_rand"
-	description="qr_politcal_rand"
-	pubDate={new Date('August 08 2021')}
->
-Political randomizer
-</Layout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+qr_political_rand
+		</main>
+		<Footer />
+	</body>
+</html>
